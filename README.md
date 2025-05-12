@@ -44,7 +44,16 @@ This project provides an interactive data analysis and reporting notebook (and d
 ### Data
 
 - Download the latest `owid-covid-data.csv` from [Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data) and place it in the `data/` directory.
-- **Robust Feature:** The code checks for the presence of the data file and provides clear error messages if it is missing.
+- **Note:** The data file is too large to upload to GitHub. **Do not commit the data file to your repository.**
+- The code will not run unless you manually download and place the data file as described above.
+
+### How to Exclude Large Data Files from GitHub
+
+1. Add the following line to your `.gitignore` file:
+   ```
+   data/owid-covid-data.csv
+   ```
+2. Commit your `.gitignore` file to ensure the data file is not tracked by git.
 
 ### Additional Robust Features
 
@@ -58,4 +67,5 @@ This project provides an interactive data analysis and reporting notebook (and d
 **Author:** Thembelani Bukali  
 **Contact:** siphothagreat@gmail.com  
 **Date:** 2025-05-05
+
 
